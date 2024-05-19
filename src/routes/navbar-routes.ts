@@ -1,16 +1,18 @@
-type TRoutes = {
+export type TRoutes = {
   submenuName?: string;
-  path?: string;
+  path: string;
 };
 
-export type AppRoutes = {
+export type TAppRoutes = {
   appName: string;
+  path: string;
   appIcon?: string;
   routes: TRoutes[];
 };
 
-export const MfeNavRoutes: AppRoutes = {
+export const MfeNavRoutes: TAppRoutes = {
   appName: 'Job Postings',
+  path: 'job-postings',
   appIcon: '/streaming/streaming-nav-icon.svg',
   routes: [
     {
